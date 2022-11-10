@@ -5,17 +5,16 @@
 package biblioteca.modelos;
 
 /**
- *
  * @author Bemaz
  */
 public class Autor {
-    private int idAutor; 
-    private String nombrePila; 
-    private String apellidoPaterno; 
-    private int estado; 
+    private int idAutor;
+    private String nombrePila;
+    private String apellidoPaterno;
+    private int estado;
 
-    public Autor(){
-        
+    public Autor() {
+
     }
 
     public Autor(int idAutor, String nombrePila, String apellidoPaterno, int estado) {
@@ -24,9 +23,8 @@ public class Autor {
         this.apellidoPaterno = apellidoPaterno;
         this.estado = estado;
     }
-    
-    
-    
+
+
     public int getIdAutor() {
         return idAutor;
     }
@@ -58,6 +56,6 @@ public class Autor {
     public void setEstado(int estado) {
         this.estado = estado;
     }
-    
-    
+
+
 }

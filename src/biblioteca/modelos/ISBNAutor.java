@@ -5,12 +5,11 @@
 package biblioteca.modelos;
 
 /**
- *
  * @author Bemaz
  */
 public class ISBNAutor {
-    private int idAutor; 
-    private String isbn; 
+    private int idAutor;
+    private String isbn;
 
     public ISBNAutor() {
     }
@@ -35,5 +34,5 @@ public class ISBNAutor {
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
-    
+
 }

@@ -5,14 +5,13 @@
 package biblioteca.modelos;
 
 /**
- *
  * @author Bemaz
  */
 public class Libro {
-    private String isbn; 
-    private String titulo; 
-    private int numeroEdicion; 
-    private String copyright; 
+    private String isbn;
+    private String titulo;
+    private int numeroEdicion;
+    private String copyright;
 
     public Libro() {
     }
@@ -24,7 +23,7 @@ public class Libro {
         this.copyright = copyright;
     }
 
-    
+
     public String getIsbn() {
         return isbn;
     }
@@ -56,7 +55,6 @@ public class Libro {
     public void setCopyright(String copyright) {
         this.copyright = copyright;
     }
-    
-    
-    
+
+
 }

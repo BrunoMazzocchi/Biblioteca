@@ -3,14 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package biblioteca.dao;
-import java.sql.Connection; 
-import java.sql.PreparedStatement; 
-import java.sql.ResultSet; 
-import java.sql.SQLException; 
-import java.util.ArrayList; 
-import biblioteca.modelos.Autor; 
+
+import biblioteca.modelos.*;
+
+import java.sql.*;
+import java.util.*;
+
 /**
- *
  * @author Bemaz
  */
 public class TablaAutor {
@@ -106,6 +105,12 @@ public class TablaAutor {
         return 0;
     }
 
+    // Meotodo para listar los registros de la tabla Autor
+    public ArrayList<Autor> getLista() {
+        return lista;
+    }
+
+
     // Método para modificar un registro de la tabla Autor
     public int modificarRegistros(Autor autor) {
         int resultado = 0;
@@ -189,7 +194,7 @@ public class TablaAutor {
                     }
                     break;
                 case 4:
-                    if (this.agregarRegistrar( autor) != 0) {
+                    if (this.agregarRegistrar(autor) != 0) {
                         nuevos++;
                     } else {
                         errorNuevos++;

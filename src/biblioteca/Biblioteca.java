@@ -4,8 +4,9 @@
  */
 package biblioteca;
 
+import biblioteca.formulario.Autor.FrmAutor;
+
 /**
- *
  * @author Bemaz
  */
 public class Biblioteca {
@@ -15,6 +16,8 @@ public class Biblioteca {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        FrmAutor frmAutor = new FrmAutor();
+        frmAutor.setVisible(true);
     }
-    
+
 }
